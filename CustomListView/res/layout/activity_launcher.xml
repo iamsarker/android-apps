@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"  
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/doctorPlanHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="0dp" >
+
+        <TextView
+            android:id="@+id/tvDoctorPlanDate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="7"
+            android:text="19/04/2014 Saturday"
+            android:textColor="#ffffff"
+            android:textSize="10pt" />
+
+        <Button
+            android:id="@+id/btnSavePlan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="3"
+            android:background="@drawable/send_icon"
+            android:textStyle="bold"
+            android:textColor="#0000AA"
+            android:text="Send" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/doctorPlanListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal" >
+
+        <ListView
+            android:id="@+id/doctorPlanList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#CCC" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

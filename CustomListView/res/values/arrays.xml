@@ -1,0 +1,49 @@
+  <resources>    
+        <string-array name="shift_list">
+        	<item>Morning</item>
+ 			<item>Evening</item>
+    	</string-array>
+    	
+        <string-array name="shift_list2">
+            <item>Choose</item>
+        	<item>Morning</item>
+ 			<item>Evening</item>
+    	</string-array>
+    	
+        <string-array name="location_list">
+        	<item>Personal</item>
+        	<item>Institute</item>
+ 			<item>Chamber</item>
+    	</string-array>
+    	
+        <string-array name="call_type_list">
+        	<item>General Call</item>
+ 			<item>Double Call</item>
+ 			<item>Group Call</item>
+    	</string-array>
+    	
+        <string-array name="group_call_list">
+        	<item>CME</item>
+ 			<item>RTD</item>
+ 			<item>Discussion</item>
+    	</string-array>
+    	
+        <string-array name="payment_type_list">
+            <item>Select</item>
+        	<item>Cash</item>
+ 			<item>Check</item>
+    	</string-array>
+    	
+        <string-array name="leave_type_list">
+            <item>Select</item>
+        	<item>Casual</item>
+ 			<item>Medical</item>
+ 			<item>Others</item>
+    	</string-array>
+    	
+        <string-array name="day_type_list">
+        	<item>Full Day</item>
+ 			<item>Half Day</item>
+    	</string-array>
+    	
+    </resources>  
