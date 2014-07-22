@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Student Registration</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="deptDes">dep</string>
+    
+    <string name="btnDeptD">Manage Department</string>
+    <string name="lblcodeD">Dept Code</string>
+    <string name="lblnameD">Dept Name</string>
+    <string name="hntcodeD">Department Code</string>
+    <string name="hntnameD">Department Name</string>
+    <string name="btnCreateD">Create</string>
+    <string name="btnDeleteD">Delete</string>
+    <string name="btnUpdateD">Update</string>
+	
+    
+    <string name="btnDeptC">Manage Courses</string>
+    <string name="lblcodeC">Course Code</string>
+    <string name="lblnameC">Course Name</string>
+    <string name="hntcodeC">Course Code</string>
+    <string name="hntnameC">Course Name</string>
+    
+    <string name="btnAddC">Add Course</string>
+    <string name="btnDeleteC">Delete</string>
+    <string name="btnUpdateC">Update</string>
+    
+    <string name="lblManageS">Manage Student</string>
+    <string name="lblRegNo">Registra. No</string>
+    <string name="lblNameS">Studnt Name</string>
+    <string name="hntRegNo">Registration No</string>
+    <string name="hntNameS">Student Name</string>
+    <string name="lblEmail">Email Addr. .</string>
+    <string name="hntEmail">info@findingsoft.com</string>
+    
+    <string name="btnAddS">Add Student</string>
+    <string name="btnDeleteS">Delete</string>
+    <string name="btnUpdateS">Update</string>
+    
+    <string name="lblEnroll">Enroll in a Course</string>
+    <string name="btnEnroll">Enroll</string>
+    <string name="btnEnrollDel">Delete Enroll</string>
+    <string name="btnEdit">Edit</string>
+    <string name="lblSelect">Select Course</string>
+    
+    <string name="lblCCODE">MATH</string>
+    
+    
+</resources>

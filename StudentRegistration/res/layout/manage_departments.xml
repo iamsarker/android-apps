@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="#f0f0f0" >
+
+        <TextView
+            android:id="@+id/topBarText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/btnDeptD"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/creatingDept"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topBar" >
+
+        <TextView
+            android:id="@+id/lblDCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/lblcodeD" />
+
+        <EditText
+            android:id="@+id/txtDCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/lblDCode"
+            android:hint="@string/hntcodeD"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/lblDName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblDCode"
+            android:layout_marginTop="20dp"
+            android:text="@string/lblnameD" />
+
+        <EditText
+            android:id="@+id/txtDName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/txtDCode"
+            android:layout_below="@id/txtDCode"
+            android:layout_toRightOf="@id/lblDName"
+            android:hint="@string/hntnameD"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btnCreateD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/txtDCode"
+            android:layout_below="@id/txtDName"
+            android:text="@string/btnCreateD" />
+
+        <Button
+            android:id="@+id/btnUpdateD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDName"
+            android:layout_toRightOf="@id/btnCreateD"
+            android:text="@string/btnUpdateD" />
+
+        <Button
+            android:id="@+id/btnDeleteD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDName"
+            android:layout_toRightOf="@id/btnUpdateD"
+            android:text="@string/btnDeleteD" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/listDept"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/creatingDept" >
+
+        <ListView
+            android:id="@+id/deptListAll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

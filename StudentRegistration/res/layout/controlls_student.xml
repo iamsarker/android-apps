@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/studentDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true" >
+
+        <TextView
+            android:id="@+id/studentEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="me.sarker@gmail.com"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/studentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Md. Shahadat Sarker"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/studentExtra"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" >
+
+        <ImageView
+            android:id="@+id/enrollCourseImg"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/deptDes"
+            android:src="@drawable/book" />
+    </RelativeLayout>
+
+        <RelativeLayout
+        android:id="@+id/studentDetailsMid"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_toLeftOf="@id/studentExtra"
+        android:layout_toRightOf="@id/studentDetails" >
+
+        <TextView
+            android:id="@+id/studentRegNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="201030289"
+            android:textSize="12sp" />
+    </RelativeLayout>
+    
+    
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/courseDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true" >
+
+        <TextView
+            android:id="@+id/enCourseTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="@string/lblCCODE"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/enCourseName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/lblCCODE"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/middleDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@id/courseDetails" >
+
+        <TextView
+            android:id="@+id/enDeptCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/lblCCODE"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/courseExtra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/middleDetails" >
+
+        <ImageButton
+            android:id="@+id/enEditResult"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/btnEdit"
+            android:src="@drawable/edit" />
+
+        <EditText
+            android:id="@+id/enCourseResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/enEditResult"
+            android:hint="@string/lblCCODE"
+            android:inputType="numberDecimal" />
+    </RelativeLayout>
+
+</RelativeLayout>

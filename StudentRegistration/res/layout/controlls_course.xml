@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/courseDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true" >
+
+        <TextView
+            android:id="@+id/courseTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="CSE101"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/courseName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Mathe"
+            android:textSize="14sp" />
+    </RelativeLayout>
+        <RelativeLayout
+        android:id="@+id/courseExtra"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" >
+
+        <ImageView
+            android:id="@+id/deleteCourseImg"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/deptDes"
+            android:src="@drawable/delete" />
+    </RelativeLayout>
+    
+
+</RelativeLayout>
