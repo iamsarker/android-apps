@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="res_array_list">
+    	<item>Developer</item>
+    	<item>Md. Shahadat Sarker</item>
+    	<item>ErrorPoint.com</item>    
+    </string-array>
+    
+</resources>
