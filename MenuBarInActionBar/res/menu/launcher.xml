@@ -1,0 +1,57 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_action_search"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_search"/>
+    <item
+        android:id="@+id/action_overflow"
+        android:icon="@drawable/ic_action_overflow"
+        android:showAsAction="always"
+        android:title="@string/action_overflow">
+        <menu>
+            <item
+                android:id="@+id/action_record"
+                android:icon="@drawable/ic_action_video"
+                android:showAsAction="ifRoom"
+                android:title="@string/action_record"/>
+            <item
+                android:id="@+id/action_save"
+                android:icon="@drawable/ic_action_save"
+                android:showAsAction="ifRoom"
+                android:title="@string/action_save"/>
+            <item
+                android:id="@+id/action_label"
+                android:icon="@drawable/ic_action_new_label"
+                android:showAsAction="ifRoom"
+                android:title="@string/action_label"/>
+            <item
+                android:id="@+id/action_play"
+                android:icon="@drawable/ic_action_play"
+                android:showAsAction="ifRoom"
+                android:title="@string/action_play"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/action_record2"
+        android:icon="@drawable/ic_action_video"
+        android:showAsAction="never"
+        android:title="@string/action_record"/>
+    <item
+        android:id="@+id/action_save2"
+        android:icon="@drawable/ic_action_save"
+        android:showAsAction="never"
+        android:title="@string/action_save"/>
+    <item
+        android:id="@+id/action_label2"
+        android:icon="@drawable/ic_action_new_label"
+        android:showAsAction="never"
+        android:title="@string/action_label"/>
+    <item
+        android:id="@+id/action_play2"
+        android:icon="@drawable/ic_action_play"
+        android:showAsAction="never"
+        android:title="@string/action_play"/>
+
+</menu>

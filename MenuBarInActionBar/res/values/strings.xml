@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MenuBarInActionBar</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="action_record">Record Video</string>
+    <string name="action_save">Save</string>
+    <string name="action_label">Add Label</string>
+    <string name="action_play">Play Video</string>
+    <string name="action_overflow">overflow</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>
