@@ -1,0 +1,27 @@
+<resources>
+    <color name="black_overlay">#FFFFFF</color>
+    <color name="color_background">#FFFFFF</color>
+     <color name="color_hilight">#005278</color>
+    <color name="color_forgraound">#404040</color>
+    <color name="color_selected">#404040</color>
+    <color name="color_Text">#404040</color>
+    
+    <color name="color_text_deep">#303030</color>
+     <color name="color_text_med">#505050</color>
+    <color name="color_text_light">#808080</color>
+   
+        	
+    <color name="backgroundWhite">#ffffff</color>
+    <color name="textBlack">#404040</color>
+    <color name="textWhite">#ffffff</color> 	
+    <color name="NiceButtonStartColor">#929292</color>
+    <color name="NiceButtonEndColor">#6B6B6B</color>
+    <color name="NiceButtonDisabledStartColor">#565051</color>
+    <color name="NiceButtonDisabledEndColor">#736F6E</color>
+    <color name="NiceButtonBorderColor">#323232</color>
+    <color name="button_pressed">#1E90FF</color>
+    <color name="button_focused">#D2691E	</color>
+    <color name="button_default">#A9A9A9</color>
+    
+    
+</resources>
