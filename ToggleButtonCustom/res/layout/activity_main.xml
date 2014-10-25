@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="#696969"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/toggleGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_column="0"
+        android:background="#FFFFFF"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        android:rowCount="1"
+        android:useDefaultMargins="true" >
+
+        <ToggleButton
+            android:id="@+id/number_one"
+            android:layout_width="34sp"
+            android:layout_height="40sp"
+            android:layout_margin="5sp"
+            android:background="@drawable/button_style"
+            android:textOff="1"
+            android:textOn="1" />
+
+        <ToggleButton
+            android:id="@+id/number_two"
+            android:layout_width="34sp"
+            android:layout_height="40sp"
+            android:layout_margin="5sp"
+            android:background="@drawable/button_style"
+            android:textOff="2"
+            android:textOn="2" />
+
+        <ToggleButton
+            android:id="@+id/number_three"
+            android:layout_width="34sp"
+            android:layout_height="40sp"
+            android:layout_margin="5sp"
+            android:background="@drawable/button_style"
+            android:textOff="3"
+            android:textOn="3" />
+
+        <ToggleButton
+            android:id="@+id/number_four"
+            android:layout_width="34sp"
+            android:layout_height="40sp"
+            android:layout_margin="5sp"
+            android:background="@drawable/button_style"
+            android:textOff="4"
+            android:textOn="4" />
+
+        <ToggleButton
+            android:id="@+id/number_five"
+            android:layout_width="34sp"
+            android:layout_height="40sp"
+            android:layout_margin="5sp"
+            android:background="@drawable/button_style"
+            android:textOff="5"
+            android:textOn="5" />
+    </RadioGroup>
+
+</LinearLayout>
