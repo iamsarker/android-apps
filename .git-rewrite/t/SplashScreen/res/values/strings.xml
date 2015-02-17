@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SplashScreen</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Launcher Activity</string>
+    <string name="app_msg">Please wait &#8230;&#8230;&#8230; for Home Activity</string>
+    <string name="home_activity">Home Activity</string>
+    <string name="home_msg">Home Activity - Successfully Launched</string>
+
+</resources>

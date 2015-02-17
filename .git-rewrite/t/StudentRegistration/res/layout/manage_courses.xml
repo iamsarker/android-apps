@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/topPanelBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#e8e8e8" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="12dp"
+            android:text="@string/lblnameD" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/lblcodeD" />
+
+        <TextView
+            android:id="@+id/viewCodeD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/viewNameD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignLeft="@+id/viewCodeD"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/topMiddleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topPanelBar"
+        android:background="#fafafa" >
+
+        <TextView
+            android:id="@+id/lblCodeC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/lblcodeC" />
+
+        <EditText
+            android:id="@+id/txtCodeC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/lblCodeC"
+            android:hint="@string/lblcodeC"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/lblNameC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblCodeC"
+            android:layout_marginTop="15dp"
+            android:text="@string/lblnameC" />
+
+        <EditText
+            android:id="@+id/txtNameC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtCodeC"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/lblNameC"
+            android:hint="@string/lblnameC"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/addCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/txtNameC"
+            android:text="@string/btnAddC" />
+
+        <Button
+            android:id="@+id/updateCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtNameC"
+            android:layout_toLeftOf="@id/addCourse"
+            android:text="@string/btnUpdateC" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/topBottomBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/topMiddleBar"
+        android:background="#efefef" >
+
+        <ListView
+            android:id="@+id/courseListAll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

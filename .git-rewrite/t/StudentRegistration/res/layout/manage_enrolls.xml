@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+        <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="#f0f0f0" >
+
+        <TextView
+            android:id="@+id/topBarText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/lblEnroll"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/creatingDept"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topBar" >
+
+        <TextView
+            android:id="@+id/lblEnrollRegNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/lblRegNo" />
+
+        <EditText
+            android:id="@+id/txtEnrollReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/lblEnrollRegNo"
+            android:hint="@string/hntRegNo"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/lblEName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblEnrollRegNo"
+            android:layout_marginTop="20dp"
+            android:text="@string/lblNameS" />
+
+        <EditText
+            android:id="@+id/txtEnrollName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/txtEnrollReg"
+            android:layout_below="@id/txtEnrollReg"
+            android:layout_toRightOf="@id/lblEName"
+            android:hint="@string/hntNameS"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/lblSelectEnroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/txtEnrollName"
+            android:text="@string/lblSelect" />
+        
+        <Spinner
+            android:id="@+id/spnSelectCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/txtEnrollName"
+            android:layout_toRightOf="@id/lblSelectEnroll"
+            android:text="@string/btnDeleteD" />
+        <Button
+            android:id="@+id/btnEnrollDel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spnSelectCourse"
+            android:layout_alignParentRight="true"
+            android:text="@string/btnEnrollDel"/>
+        
+        <Button
+            android:id="@+id/btnEnroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spnSelectCourse"
+            android:layout_toLeftOf="@id/btnEnrollDel"
+            android:text="@string/btnEnroll"/>
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/listEnroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/creatingDept" >
+
+        <ListView
+            android:id="@+id/enrollListAll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </ListView>
+    </RelativeLayout>
+    
+
+</RelativeLayout>
