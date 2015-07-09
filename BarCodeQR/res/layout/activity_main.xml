@@ -8,26 +8,28 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.technovalley21.barcodeqr.MainActivity" >
-	
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:orientation="horizontal" >
-		
-        <EditText 
+        android:layout_height="160dp"
+        android:orientation="vertical" >
+
+        <EditText
             android:id="@+id/etString"
-            android:layout_width="150dp"
-            android:layout_height="35dp"
-            android:hint="Enter String" />
-        
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="String For creating QR Code"
+            android:inputType="textMultiLine"
+            android:maxLines="7" />
+
         <Button
             android:id="@+id/btnCreate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="end"
             android:text="Create Code" />
-
     </LinearLayout>
-    
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -46,11 +48,16 @@
             android:text="Format" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textViewData"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Format" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textViewData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CODE DATA" />
+    </ScrollView>
 
     <ImageView
         android:id="@+id/scannedBitmap"

@@ -1,11 +1,16 @@
 package com.technovalley21.barcodeqr;
 
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.provider.MediaStore;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -16,7 +21,6 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.common.BitMatrix;
@@ -36,13 +40,13 @@ public class MainActivity extends Activity {
         
         btnScan = (Button) findViewById(R.id.btnScan);
         btnCreate = (Button) findViewById(R.id.btnCreate);
-        
         textViewFormat = (TextView) findViewById(R.id.textViewFormat);
         textViewData = (TextView) findViewById(R.id.textViewData);
-        
         etString = (EditText) findViewById(R.id.etString);
-        
         scannedBitmap = (ImageView) findViewById(R.id.scannedBitmap);
+        
+        createDirectory();
+        
         
         btnScan.setOnClickListener(new OnClickListener() {
 			
@@ -69,14 +73,52 @@ public class MainActivity extends Activity {
         
     }
     
+    public String createDirectory() {
+		if (isExtSDCardPresent()) {
+			String filePath = Environment.getExternalStorageDirectory()
+					.getAbsolutePath() + "/QRCODES";
+			File file = new File(filePath);
+			if (!file.exists())
+				file.mkdirs();
+
+			return filePath;
+		} else
+			return null;
+	}
+    
+    public boolean isExtSDCardPresent() {
+		return Environment.getExternalStorageState().equals(
+				android.os.Environment.MEDIA_MOUNTED)
+				&& !Environment.getExternalStorageState().equals(
+						android.os.Environment.MEDIA_MOUNTED_READ_ONLY);
+	}
+    
     public void createBarcodeBitmap(){
     	String barcode_content = etString.getText().toString();
+    	String fileNames[] = barcode_content.split("\n");
+    	String fileName = "QR_" + fileNames[0];
     	QRCodeWriter qrWriter = new QRCodeWriter();
 		
 		try {
-			BitMatrix bitMatrix = qrWriter.encode(barcode_content, BarcodeFormat.QR_CODE, 150, 150);
+			BitMatrix bitMatrix = qrWriter.encode(barcode_content, BarcodeFormat.QR_CODE, 250, 250);
 			Bitmap bitmap = toBitmap(bitMatrix);
 			scannedBitmap.setImageBitmap(bitmap);
+			
+			
+			ByteArrayOutputStream bytes = new ByteArrayOutputStream();
+			bitmap.compress(Bitmap.CompressFormat.JPEG, 100, bytes);
+
+			//you can create a new file name "test.jpg" in sdcard folder.
+			File f = new File(Environment.getExternalStorageDirectory()
+			                        + File.separator + "QRCODES" + File.separator + fileName + ".jpg");
+			f.createNewFile();
+			//write the bytes in file
+			FileOutputStream fout = new FileOutputStream(f);
+			fout.write(bytes.toByteArray());
+
+			// remember close de FileOutput
+			fout.close();
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
