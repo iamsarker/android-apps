@@ -5,6 +5,8 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.media.RingtoneManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.TaskStackBuilder;
@@ -22,7 +24,7 @@ public class MainActivity extends Activity {
 	private int numMessages = 0;
 	
 	TextView cancelNotification;
-	   
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -37,12 +39,19 @@ public class MainActivity extends Activity {
 			}
 		});
 		
+		Uri alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);  // get default notification sound
+		long[] vibrate = { 100, 200, 300, 400 }; // get vibration value
+		
 		NotificationCompat.Builder nBuilder = new NotificationCompat.Builder(this);
 		nBuilder.setSmallIcon(R.drawable.ic_action_chat);
 		nBuilder.setContentTitle("Sample Notification");
 		nBuilder.setContentText("Welcome your app is running");
 		nBuilder.setTicker("Alert!!!");
 		nBuilder.setNumber(++numMessages);
+		nBuilder.setSound(alarmSound); // set default notification sound
+		nBuilder.setVibrate(vibrate); // set vibrate
+		nBuilder.setAutoCancel(true); // hide/remove notification from notification panel
+		
 		
 		Intent intentResult = new Intent(this, NotificationView.class);
 		TaskStackBuilder stackBuilder = TaskStackBuilder.create(this);
